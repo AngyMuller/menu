@@ -1,0 +1,6 @@
+project --topLevelPackage menu --projectName menu
+
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+
+logging setup --level INFO
+

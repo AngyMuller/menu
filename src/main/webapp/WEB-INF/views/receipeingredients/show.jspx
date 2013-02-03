@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_menu_domain_ReceipeIngredient" object="${receipeingredient}" path="/receipeingredients" z="93Tsfr3wsBiIgtAG/B95/mg2R74=">
+        <field:display field="unit" id="s_menu_domain_ReceipeIngredient_unit" object="${receipeingredient}" z="L7BZ070/T9kej0M5bQ6YNeLllEw="/>
+        <field:display field="quantity" id="s_menu_domain_ReceipeIngredient_quantity" object="${receipeingredient}" z="6MSV6Y8ftMBcaucuNhGF+NrvSNw="/>
+        <field:display field="dish" id="s_menu_domain_ReceipeIngredient_dish" object="${receipeingredient}" z="29+nc9kXl9NZY4gz9HF8dXY/Bso="/>
+        <field:display field="ingredient" id="s_menu_domain_ReceipeIngredient_ingredient" object="${receipeingredient}" z="DD+pr2aFg+H87td0M/dzvx5FpYw="/>
+    </page:show>
+</div>

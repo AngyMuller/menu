@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_menu_domain_Dish" items="${dishes}" z="n6/9Z8z0Q2G1Tu+OqSuUT5AN1EA=">
+        <table:table data="${dishes}" id="l_menu_domain_Dish" path="/dishes" z="hM34hFWTXQLPu46MO5fY/YFwSdM=">
+            <table:column id="c_menu_domain_Dish_preparationTime" property="preparationTime" z="jyu8WW1OVXDjPtItM2TFLH8yadQ="/>
+            <table:column id="c_menu_domain_Dish_cookingTime" property="cookingTime" z="pdrD5E2gWM1iFolMyY6AKTiBbX8="/>
+            <table:column id="c_menu_domain_Dish_reference" property="reference" z="Y48/2YykmQvcGlmKoMj3OAoi60c="/>
+            <table:column id="c_menu_domain_Dish_title" property="title" z="v258GLRozd1yU3lpX1Hra5IKJfo="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,30 @@
+
+# Entities and attributes
+enum type --class ~.reference.Unit
+enum constant --name cl
+enum constant --name kg
+enum constant --name pinch
+
+entity jpa --class ~.domain.Dish --sequenceName DISH_SEQ
+field number --fieldName preparationTime --type java.lang.Integer --primitive
+field number --fieldName cookingTime --type java.lang.Integer --primitive
+field string --fieldName reference
+field string --fieldName title --notNull
+entity jpa --class ~.domain.Realisation --sequenceName REALISATION_SEQ
+field date --fieldName Mydate --type java.util.Date --notNull
+field string --fieldName Mycomment
+entity jpa --class ~.domain.Ingredient --sequenceName INGREDIENT_SEQ
+field string --fieldName Mylabel --notNull
+entity jpa --class ~.domain.ReceipeIngredient --sequenceName RECEIPEINGREDIENT_SEQ
+field enum --fieldName unit --type ~.reference.Unit 
+field number --fieldName quantity --type java.lang.Double --primitive
+
+
+# References (relations between entities)
+field set --fieldName receipeingredients --type ReceipeIngredient --class  ~.domain.Dish --cardinality ONE_TO_MANY
+field set --fieldName realisations --type Realisation --class  ~.domain.Dish --cardinality ONE_TO_MANY
+field reference --fieldName dish --type Dish --class  ~.domain.Realisation --cardinality MANY_TO_ONE
+field reference --fieldName dish --type Dish --class  ~.domain.ReceipeIngredient --cardinality MANY_TO_ONE
+field reference --fieldName ingredient --type Ingredient --class  ~.domain.ReceipeIngredient --cardinality MANY_TO_ONE
+
+
